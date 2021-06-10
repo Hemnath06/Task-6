@@ -1,0 +1,24 @@
+body{
+    background: url(1.jpg);
+    background-size:cover ;
+}
+
+.bind h1{
+    margin-left:470px;
+    margin-top: 80px;
+    background:#cacfcb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width:500px;
+}
+
+.bind button{
+    font-size:30px;
+    margin:20px 550px;
+    width:400px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 5px;
+    border-color: #000;
+}

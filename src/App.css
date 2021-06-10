@@ -1,5 +1,26 @@
-.App {
+.App h1{
   text-align: center;
+  margin-right: 370px;
+  font-size:40px;
+  font-family: Tempus Sans ITC;
+  color: #000;
+}
+
+.App button{
+  font-size: 40px;
+  margin-left: 300px;
+  font-family: Tempus Sans ITC;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.App h2{
+  text-align: center;
+  margin-right: 90px;
+  font-size:35px;
+  font-family: Tempus Sans ITC;
+  color: #000;
 }
 
 .App-logo {

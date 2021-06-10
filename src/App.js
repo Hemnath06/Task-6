@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from "react";
+import "./App.css";
+import Bind from "./component/Bind.js";
+import Product from "./component/Product.js";
 
-function App() {
-  return (
+export default class App extends Component {
+  
+  constructor(){
+    super();
+    this.state = {
+      Ele: "" 
+    }
+  }
+
+  bind(){
+    this.setState({
+       Ele : <Bind />
+    })
+  }
+
+  change(){
+    this.setState({
+       Ele : <Product id="013"
+       name="Johny"
+       dept= "Civil"
+       degree="B.E"
+       cgpa= "8.02"  />
+    })
+  }
+
+  render(){return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h2>Choose any One</h2>
+        <button onClick={()=>this.bind()}>Bind Function</button>
+        <button onClick={()=>this.change()}>Map Function</button>
+        {this.state.Ele}
     </div>
   );
 }
+}
 
-export default App;
